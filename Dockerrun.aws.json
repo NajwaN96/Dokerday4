@@ -1,7 +1,7 @@
 {
     "AWSEBDockerrunVersion": "1",
     "Image": {
-      "Name": "registry.hub.docker.com/mohanadsinan/runaway:latest"
+      "Name": "registry.hub.docker.com/najwadv96/runaway:latest"
     },
     "Ports": [
       {
