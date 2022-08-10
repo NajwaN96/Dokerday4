@@ -1,15 +1,14 @@
 pipeline {
 
 	agent any
-
 	environment {
-		DOCKERHUB_CREDENTIALS=credentials('jenkins')
-		AWS_ACCESS_KEY_ID     = credentials('adwaa-jenkins-aws-secret-key-id')
-   AWS_SECRET_ACCESS_KEY = credentials('adwaa-jenkins-aws-secret-access-key')
+	DOCKERHUB_CREDENTIALS=credentials('Docker')
+	AWS_ACCESS_KEY_ID     = credentials('NajwaN-aws-secret-key-id')
+        AWS_SECRET_ACCESS_KEY = credentials('NajwaN-aws-secret-access-key')
 	ARTIFACT_NAME = 'Dockerrun.aws.json'
-AWS_S3_BUCKET = 'adwaa-docker-cicd'
-AWS_EB_APP_NAME = 'adwaa-jenkins-docker-d5'
-        AWS_EB_ENVIRONMENT_NAME = 'Adwaajenkinsdockerd5-env'
+	AWS_S3_BUCKET = 'najwa-dockerhub'
+	AWS_EB_APP_NAME = 'Najwa_dockerhub'
+        AWS_EB_ENVIRONMENT_NAME = 'Najwadockerhub-env'
         AWS_EB_APP_VERSION = "${BUILD_ID}"
 	}
 
