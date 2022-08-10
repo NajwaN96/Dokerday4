@@ -4,15 +4,15 @@ pipeline {
 
 	environment {
 		DOCKERHUB_CREDENTIALS_PSW = credentials('Najwa-dockerhub-token')
-        DOCKERHUB_CREDENTIALS_USR = 'Najwa'
+        	DOCKERHUB_CREDENTIALS_USR = 'Najwa'
 		AWS_ACCESS_KEY_ID     = credentials('NajwaN-aws-secret-key-id')
   		AWS_SECRET_ACCESS_KEY = credentials('NajwaN-aws-secret-access-key')
 		ARTIFACT_NAME = 'Dockerrun.aws.json'
 		AWS_S3_BUCKET = 'najwa-belt2-artifacts-123456'
 		AWS_EB_APP_NAME = 'Najwa_dockerhub'
-        AWS_EB_ENVIRONMENT_NAME = 'Najwadockerhub-env'
-        AWS_EB_APP_VERSION = "${BUILD_ID}"
-        AWS_REGION = 'us-east-1'
+       		AWS_EB_ENVIRONMENT_NAME = 'Najwadockerhub-env'
+        	AWS_EB_APP_VERSION = "${BUILD_ID}"
+        	AWS_REGION = 'us-east-1'
 	}
 
 	stages {
