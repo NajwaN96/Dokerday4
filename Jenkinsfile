@@ -11,7 +11,7 @@ pipeline {
 		AWS_EB_APP_NAME = 'Najwa_dockerhub'
         AWS_EB_ENVIRONMENT_NAME = 'Najwadockerhub-env'
         AWS_EB_APP_VERSION = "${BUILD_ID}"
-        DOCKERHUB_IMG = 'najwadv96/runaway'
+        DOCKERHUB_IMG = 'najwadv96/runaway:latest'
 	}
 
 	stages {
